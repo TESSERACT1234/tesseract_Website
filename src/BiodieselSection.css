@@ -1,0 +1,86 @@
+.biodiesel-section {
+    background-color: #f4f4f9;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .biodiesel-section .content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .biodiesel-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .biodiesel-section .intro {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .benefit-card .icon {
+    font-size: 3rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card p {
+    font-size: 1rem;
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1200px) {
+    .benefit-card {
+      width: 30%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefit-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefit-card {
+      width: 90%;
+    }
+  }
+  

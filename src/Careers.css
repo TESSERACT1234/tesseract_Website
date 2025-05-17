@@ -1,0 +1,21 @@
+.careers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vh;
+   /* fallback if image clipping fails */
+  padding: 2rem;
+}
+
+.careers-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  background: url('../public/jatropha.png') center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  /* line-height: 1.2; */
+}

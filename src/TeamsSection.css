@@ -1,0 +1,111 @@
+.teams-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #003f1f;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.team-card {
+  background: #f4f8f4;
+  border: 1px solid #d5e5d5;
+  border-radius: 12px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 63, 31, 0.15);
+}
+
+.team-content h3 {
+  margin-top: 0;
+  color: #004d26;
+}
+
+.team-content p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.team-content a {
+  color: #007a33;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.team-content a:hover {
+  text-decoration: underline;
+}
+
+.culture-section {
+  background-color: #e9f7ee;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.culture-section h2 {
+  font-size: 28px;
+  color: #003f1f;
+  margin-bottom: 15px;
+}
+
+.culture-section p,
+.culture-section ul {
+  font-size: 17px;
+  color: #222;
+  line-height: 1.6;
+}
+
+.culture-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.culture-section li {
+  margin-bottom: 10px;
+}
+
+.career-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0a5c38, #51c27b);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.career-btn:hover {
+  background: linear-gradient(135deg, #097249, #70da9f);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}

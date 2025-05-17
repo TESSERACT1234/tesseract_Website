@@ -1,0 +1,87 @@
+.contact-page {
+  background-image: url('../public/contactbg.jpg'); /* Place your image in /public/ folder */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -123px;
+}
+
+.contact-overlay {
+  /* background-color: rgba(0, 0, 0, 0.6); Black translucent */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px 60px;
+  border-radius: 10px;
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.contact-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #10b981; /* Tailwind green-500 */
+}
+
+.contact-box p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+.contact-info a {
+  color: #10b981;
+  text-decoration: none;
+}
+
+.icon {
+  color: #10b981;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-box {
+    padding: 30px 20px;
+  }
+
+  .contact-box h2 {
+    font-size: 2rem;
+  }
+}

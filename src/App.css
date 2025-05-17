@@ -1,0 +1,178 @@
+/* Custom styling for Tesseract Flex Fuel website */
+
+/* Logo styling */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff !important;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
+
+/* Add space between sections */
+.section-padding {
+  padding: 60px 0;
+}
+
+/* Contact section styling */
+footer {
+  background-color: #2b4d25;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+/* Hero background image section */
+.hero-section {
+  position: relative;
+  background-image: url('../public/newbg.jpg'); /* Make sure the path is correct */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 80px 20px; /* Enough padding on all sides */
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); */
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+  box-sizing: border-box;
+  margin-top: -120px;
+  padding-top: 0;
+  z-index: 0;
+}
+
+/* Message box inside hero section */
+.hero-message {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-message h1 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.hero-message p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 15px 60px 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  }
+
+  .hero-message h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-message p {
+    font-size: 0.95rem;
+  }
+}
+
+
+.biodiesel-section {
+  padding: 80px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #34495e;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.benefit-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-card img {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.benefit-card h5 {
+  font-size: 1.2rem;
+  color: #2d572c;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .benefit-card {
+    margin-bottom: 20px;
+  }
+}
