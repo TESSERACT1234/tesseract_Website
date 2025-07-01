@@ -1,104 +1,136 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutUs.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutUs = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+    }, []);
+
     return (
         <div className="about-wrapper">
 
-            <section className="about-hero">
-
-                <div className="hero-text" />
-
-            </section>
-
-            <section className="about-section intro">
-
-                <p>
-                    Tesseract Flex Fuel is a next-generation biodiesel manufacturing company located in Gujarat, India.
-                    With a state-of-the-art plant operating at a capacity of <strong>180 KLPD (Kilolitres Per Day)</strong>,
-                    we are committed to transforming the bioenergy landscape. Our mission is to drive India’s transition
-                    toward sustainable, domestic fuel solutions. At Tesseract, we believe in innovation, inclusion, and impact.
-                    Our team thrives in a fast-paced, purpose-driven environment where every member—from engineers to field staff—
-                    is empowered to lead, learn, and grow. We celebrate curiosity, ownership, and bold thinking.
-                    We foster a culture where ideas are welcomed, experimentation is encouraged, and mistakes are seen as stepping stones to mastery.
-                    Diversity fuels our creativity, and collaboration propels us forward. At our core, we are a mission-driven team
-                    determined to leave a lasting impact on both the energy sector and the planet.
-                    Because at Tesseract, you're not just working a job—you’re helping shape the future of sustainable fuel.
-                </p>
-
-                <div className="production-method">
-                    <h3>Our Production Method</h3>
-                    <p>
-                        At Tesseract Flex Fuel, we use a continuous transesterification process to convert a wide range of feedstocks—
-                        including used cooking oil, acid oils, and non-edible oils (Concept is to make Waste to Wealth)—into high-quality biodiesel (B100).
-                        Our fully automated plant employs cutting-edge technologies for:
-                    </p>
-                    <ul>
-                        <li>Efficient oil pre-treatment and degumming</li>
-                        <li>Precise methanol and catalyst dosing</li>
-                        <li>High-yield transesterification reactors</li>
-                        <li>Automated glycerol separation and purification</li>
-                        <li>Advanced distillation and polishing for fuel-grade biodiesel</li>
-                    </ul>
-                    <p>
-                        The entire process is monitored in real-time using IoT-enabled sensors and SCADA systems to ensure consistent quality and compliance with international biodiesel standards such as ASTM D6751 and EN 14214.
+            <section className="about-hero no-image">
+                <div className="hero-content">
+                    <h1 data-aos="fade-down" className="text-fill">
+                        Empowering India’s Green Future
+                    </h1>
+                    <p data-aos="fade-up" data-aos-delay="200" className="text-fill">
+                        Tesseract Flex Fuel —Empowering tomorrow with green fuel today.
                     </p>
                 </div>
 
-                <div className="chairman-message">
-                    <h3>Chairman’s Message</h3>
-                    <p>
-                        “At Tesseract Flex Fuel, we are not just producing biodiesel—we are building the foundation for India’s energy future.
-                        Our commitment is to sustainability, innovation, and the empowerment of communities. Together, we will fuel a cleaner, stronger tomorrow.”
-                    </p>
 
+            </section>
+
+            <section className="about-section intro" data-aos="fade-up">
+                <div className="container">
+                    <h2>Who We Are</h2>
+                    <p>
+                        Tesseract Flex Fuel is a next-gen biodiesel manufacturer based in Gujarat, India.
+                        Operating a <strong>state-of-the-art 180 KLPD</strong> plant, we’re revolutionizing the bioenergy landscape by fueling India’s sustainable growth.
+                    </p>
+                    <p>
+                        Our culture thrives on curiosity, diversity, and collaboration. Engineers, field staff, and innovators come together to power progress — one drop at a time.
+                    </p>
                 </div>
             </section>
 
-
-
-            <section className="about-section mission">
-                <h2>Our Vision & Mission</h2>
-                <div className="mission-cards">
-                    <div className="mission-card">
-                        <h3>🌍 Sustainability</h3>
-                        <p>Build a cleaner future through renewable biofuels and waste-to-energy innovation.</p>
-                    </div>
-                    <div className="mission-card">
-                        <h3>🚛 Energy Independence</h3>
-                        <p>Reduce dependency on imported fuels by producing cost-effective, high-quality biodiesel locally.</p>
-                    </div>
-                    <div className="mission-card">
-                        <h3>🤝 Collaboration</h3>
-                        <p>Work with farmers, industries, and the government to create a circular economy for biofuels.</p>
+            <section className="about-section values" data-aos="fade-up">
+                <div className="container">
+                    <h2>Our Core Values</h2>
+                    <div className="values-grid">
+                        <div className="value-card" data-aos="zoom-in">
+                            <h3>♻️ Sustainability</h3>
+                            <p>Turning waste into wealth through world-class biodiesel production.</p>
+                        </div>
+                        <div className="value-card" data-aos="zoom-in" data-aos-delay="200">
+                            <h3>💡 Innovation</h3>
+                            <p>Constant R&D to stay ahead in clean fuel technology and efficiency.</p>
+                        </div>
+                        <div className="value-card" data-aos="zoom-in" data-aos-delay="400">
+                            <h3>🤝 Inclusion</h3>
+                            <p>Diversity and collaboration drive our ideas and our impact.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="about-section culture">
-                <h2>Our Culture</h2>
-                <p>
-                    At Tesseract, we believe in innovation, inclusion, and impact. Our team thrives in a fast-paced,
-                    purpose-driven environment where every member—from engineers to field staff—is empowered to lead
-                    and grow. We celebrate curiosity, ownership, and bold thinking.
-
-                </p>
-                <div className="culture-tags">
-                    <span>💡 Innovative Thinking</span>
-                    <span>🤝 Team Spirit</span>
-                    <span>📈 Growth-Oriented</span>
-                    <span>⚖️ Ethical & Transparent</span>
-                    <span>🌱 Eco-First Mindset</span>
+            <section className="about-section method" data-aos="fade-up">
+                <div className="container">
+                    <h2>Our Production</h2>
+                    <p>
+                        Our continuous transesterification process converts feedstocks like used cooking oil, acid oils, and non-edible oils into high-grade biodiesel (B100).
+                    </p>
+                    <div className="method-steps">
+                        <div className="method-step" data-aos="fade-right">✅ Oil pre-treatment & degumming</div>
+                        <div className="method-step" data-aos="fade-right" data-aos-delay="100">✅ Precise methanol & catalyst dosing</div>
+                        <div className="method-step" data-aos="fade-right" data-aos-delay="200">✅ High-yield transesterification reactors</div>
+                        <div className="method-step" data-aos="fade-right" data-aos-delay="300">✅ Automated glycerol separation & purification</div>
+                        <div className="method-step" data-aos="fade-right" data-aos-delay="400">✅ Advanced distillation & polishing</div>
+                    </div>
+                    <p>
+                        Everything is monitored in real-time with IoT-enabled sensors and SCADA systems for global compliance.
+                    </p>
                 </div>
             </section>
 
-            <section className="about-section join">
-                <h2>Join Our Mission</h2>
-                <p>
-                    We're always looking for passionate minds who want to make an impact in green energy. Whether you're an engineer, chemist, logistician, or strategist—there’s a place for you at Tesseract Flex Fuel.
-                </p>
-                <a href="/careers" className="about-cta">Explore Career Opportunities</a>
+            <section className="about-section chairman" data-aos="fade-up">
+                <div className="container">
+                    <h2>Chairman’s Message</h2>
+                    <blockquote>
+                        “At Tesseract Flex Fuel, we’re not just producing biodiesel — we’re fueling India’s energy independence with sustainability, innovation, and community empowerment.”
+                    </blockquote>
+                </div>
             </section>
+
+            <section className="about-section mission" data-aos="fade-up">
+                <div className="container">
+                    <h2>Vision & Mission</h2>
+                    <div className="mission-grid">
+                        <div className="mission-card" data-aos="flip-left">
+                            <h3>🌍 Green Future</h3>
+                            <p>Building a circular economy for biofuels and clean energy.</p>
+                        </div>
+                        <div className="mission-card" data-aos="flip-left" data-aos-delay="200">
+                            <h3>🚛 Energy Independence</h3>
+                            <p>Reducing India’s dependence on imported fuels with local production.</p>
+                        </div>
+                        <div className="mission-card" data-aos="flip-left" data-aos-delay="400">
+                            <h3>🤝 Collaboration</h3>
+                            <p>Partnering with farmers, industries, and government for shared impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="about-section culture" data-aos="fade-up">
+                <div className="container">
+                    <h2>Our Culture</h2>
+                    <p>
+                        We champion curiosity, ownership, and collaboration. Our team embraces new ideas and celebrates diverse perspectives to shape tomorrow’s biofuel industry.
+                    </p>
+                    <div className="culture-tags">
+                        <span>🚀 Agile</span>
+                        <span>💡 Innovative</span>
+                        <span>🤝 Inclusive</span>
+                        <span>📈 Growth-Driven</span>
+                        <span>🌱 Eco-Conscious</span>
+                    </div>
+                </div>
+            </section>
+
+            <section className="about-section join" data-aos="fade-up">
+                <div className="container">
+                    <h2>Join Us</h2>
+                    <p>
+                        Ready to drive real change? Engineers, strategists, and innovators — your journey starts here.
+                    </p>
+                    <a href="/careers" className="about-cta">Explore Careers</a>
+                </div>
+            </section>
+
         </div>
     );
 };

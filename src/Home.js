@@ -2,12 +2,20 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Mission from './Mission';
 import BiodieselSection from './BiodieselSection';
+import SEO from './SEO';
 
 import './Home.css'
 
 const Home = () => {
   return (
     <>
+      <SEO
+        title="Home"
+        description="Tesseract Flex Fuel is India’s leader in sustainable biodiesel manufacturing. Join us in driving the green energy revolution."
+        keywords="biodiesel India, Tesseract Flex Fuel, sustainable biofuel, biodiesel news, biodiesel latest news, biodiesel, biofuel india, biofuel"
+        url="https://www.tesseractflexfuel.com/"
+      />
+
       <div className="hero-section">
         <div className="hero-message">
           <h1 style={{ fontSize: "2rem" }}><b>Empowering tomorrow with green fuel today.</b></h1>
@@ -46,7 +54,7 @@ const Home = () => {
       </div>
 
       <BiodieselSection />
-      
+
     </>
   );
 };

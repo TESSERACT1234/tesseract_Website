@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaWhatsapp , FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a>
           <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+          <a href="https://Youtube.com" target="_blank" rel="noreferrer"><FaYoutube /></a>
         </center>
       </div>
       {/* <div className="footer-container">
@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="footer-bottom">
         © {new Date().getFullYear()} Tesseract Flex Fuel. All rights reserved.
       </div>
-      <p><center> Made with  💚  Tesseract Creations.</center></p>
+      <p><center> Made with 💚 by Arya Shah</center></p>
     </footer>
   );
 };
