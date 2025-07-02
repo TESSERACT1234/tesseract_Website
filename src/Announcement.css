@@ -1,0 +1,83 @@
+.announcement-section {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  margin: 40px auto;
+  max-width: 1200px; /* wider than before */
+}
+
+.announcement-heading {
+  font-size: 3.2rem; /* bigger heading like Reliance */
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: left;
+}
+
+.announcement-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+}
+
+.announcement-text {
+  max-width: 60%;
+}
+
+.announcement-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.announcement-text p {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 0.95rem; /* smaller description */
+}
+
+.announcement-meta {
+  font-size: 0.8rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.announcement-meta .dot {
+  margin: 0 8px;
+}
+
+.announcement-logos img {
+  width: 40rem; /* bigger image */
+  object-fit: contain;
+}
+
+.no-announcement {
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .announcement-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .announcement-text {
+    max-width: 100%;
+  }
+  .announcement-logos {
+    margin-top: 20px;
+  }
+  .announcement-logos img {
+    width: 12rem;
+  }
+}

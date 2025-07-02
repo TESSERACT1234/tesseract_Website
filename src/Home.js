@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Mission from './Mission';
 import BiodieselSection from './BiodieselSection';
 import SEO from './SEO';
+import BiodieselBenefitsSlider from './BiodieselBenefitsSlider';
+import Announcement from './Announcement';
 
 import './Home.css'
 
@@ -52,9 +54,11 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-
+      <BiodieselBenefitsSlider/>
+      <Announcement/>
       <BiodieselSection />
-
+     
+      
     </>
   );
 };
