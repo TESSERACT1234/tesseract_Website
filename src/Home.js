@@ -6,13 +6,14 @@ import SEO from './SEO';
 import BiodieselBenefitsSlider from './BiodieselBenefitsSlider';
 import Announcement from './Announcement';
 
+
 import './Home.css'
 
 const Home = () => {
   return (
     <>
       <SEO
-        title="Home"
+        
         description="Tesseract Flex Fuel is India’s leader in sustainable biodiesel manufacturing. Join us in driving the green energy revolution."
         keywords="biodiesel India, Tesseract Flex Fuel, sustainable biofuel, biodiesel news, biodiesel latest news, biodiesel, biofuel india, biofuel"
         url="https://www.tesseractflexfuel.com/"
@@ -54,11 +55,12 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <BiodieselBenefitsSlider/>
-      <Announcement/>
+
+      <BiodieselBenefitsSlider />
+      <Announcement />
       <BiodieselSection />
-     
       
+
     </>
   );
 };
