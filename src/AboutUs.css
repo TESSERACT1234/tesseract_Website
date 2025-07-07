@@ -6,13 +6,19 @@
 
 /* HERO — Clean Gradient Background Instead of Image */
 .about-hero.no-image {
-  height: 60vh;
+  min-height: 60vh;
   background: #ffffff; /* white background */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .hero-content .text-fill {
@@ -26,16 +32,17 @@
 }
 
 .hero-content h1.text-fill {
-  font-size: 5rem;
+  font-size: clamp(2rem, 6vw, 5rem);
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
 .hero-content p.text-fill {
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
 
 /* General Sections */
 .about-section {
@@ -175,11 +182,15 @@
     flex-direction: column;
   }
 
-  .hero-content h1 {
-    font-size: 2rem;
+  .hero-content {
+    padding: 2rem 1rem;
   }
 
-  .hero-content p {
-    font-size: 1rem;
+  .hero-content h1.text-fill {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+  }
+
+  .hero-content p.text-fill {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
   }
 }
