@@ -2,11 +2,11 @@
   background-color: #ffffff;
   padding: 50px 20px;
   margin: 40px auto;
-  max-width: 1200px; /* wider than before */
+  max-width: 1200px;
 }
 
 .announcement-heading {
-  font-size: 3.2rem; /* bigger heading like Reliance */
+  font-size: 3.2rem;
   font-weight: 700;
   color: #1b5e20;
   margin-bottom: 40px;
@@ -24,6 +24,7 @@
   padding: 30px 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin: 0 auto;
+  gap: 30px;
 }
 
 .announcement-text {
@@ -39,12 +40,12 @@
 .announcement-text p {
   color: #555;
   margin-bottom: 15px;
-  line-height: 1.5;
-  font-size: 0.95rem; /* smaller description */
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .announcement-meta {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #888;
   display: flex;
   align-items: center;
@@ -55,7 +56,9 @@
 }
 
 .announcement-logos img {
-  width: 40rem; /* bigger image */
+  width: 28rem;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -64,19 +67,82 @@
   text-align: center;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .announcement-heading {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
   .announcement-card {
     flex-direction: column;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
+
   .announcement-text {
     max-width: 100%;
   }
+
+  .announcement-logos img {
+    width: 20rem;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .announcement-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .announcement-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .announcement-text {
+    max-width: 100%;
+  }
+
+  .announcement-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .announcement-text p {
+    font-size: 0.9rem;
+  }
+
+  .announcement-meta {
+    font-size: 0.75rem;
+  }
+
   .announcement-logos {
     margin-top: 20px;
   }
+
+  .announcement-logos img {
+    width: 14rem;
+  }
+}
+
+/* Extra small screens (optional) */
+@media (max-width: 480px) {
+  .announcement-heading {
+    font-size: 1.6rem;
+  }
+
+  .announcement-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .announcement-text p {
+    font-size: 0.85rem;
+  }
+
   .announcement-logos img {
     width: 12rem;
   }
